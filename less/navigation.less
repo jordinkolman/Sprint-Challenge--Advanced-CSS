@@ -1,1 +1,33 @@
 // Navigation code here
+.container{
+    .navigation-bar{
+        .flex-settings(column nowrap, space-between, center);
+
+        @media @phone {
+            width: 99%;
+        }
+
+        h1 {
+            font-size: 4.0rem;
+            padding: 10px;
+        }
+
+        nav{
+            .flex-settings(row nowrap, space-evenly, flex-start);
+            width: 56.5%;
+            padding: 10px;
+
+            @media @phone{
+                width: 90%;
+            }
+
+            a {
+                text-decoration: none;
+                font:@nav-font;
+                color: black;
+                font-size: 1.7rem;
+            }
+
+        }
+    }
+}
